@@ -8,11 +8,11 @@ AI-Generated Real-Time Plant Visualization & Digital Twin for Water Treatment Fa
 
 ## Background
 
-The goal of this project is to automatically transform existing water treatment plant diagrams (specifically subsystem and operational SCADA displays like Reverse Osmosis racks) into structured, interactive SVG visualizations connected to live operational data[cite: 1].
+The goal of this project is to automatically transform existing water treatment plant diagrams (specifically subsystem and operational SCADA displays like Reverse Osmosis racks) into structured, interactive SVG visualizations connected to live operational data.
 
-Currently, plant operational data exists and is accessible via SCADA systems and internal applications. However, data is primarily presented through tables, lists, and charts, lacking a process-oriented visual layer[cite: 1].
+Currently, plant operational data exists and is accessible via SCADA systems and internal applications. However, data is primarily presented through tables, lists, and charts, lacking a process-oriented visual layer.
 
-This project bridges that gap by creating an AI-driven workflow capable of generating visual process representations directly from existing subsystem diagrams[cite: 1].
+This project bridges that gap by creating an AI-driven workflow capable of generating visual process representations directly from existing subsystem diagrams.
 
 ---
 
@@ -24,13 +24,13 @@ Transform plant subsystem diagrams into live process visualizations that serve a
 
 ## Main Objectives
 
-1. Automatically interpret existing plant subsystem diagrams (PFD / P&ID views)[cite: 1].
-2. Identify process equipment, connections, and flow paths (focusing on key 6–7 primary assets per subsystem display)[cite: 1].
-3. Generate standardized, editable, and machine-readable SVG files[cite: 1].
-4. Prepare SVG assets for integration with operational data[cite: 1].
-5. Connect SVG elements directly to SCADA tags (using original diagram tags and secondary backend identifiers)[cite: 1].
-6. Display live equipment states, telemetry measurements, and alarms[cite: 1].
-7. Enable process-oriented Digital Twin visualization capabilities[cite: 1].
+1. Automatically interpret existing plant subsystem diagrams (PFD / P&ID views).
+2. Identify process equipment, connections, and flow paths (focusing on key 6–7 primary assets per subsystem display).
+3. Generate standardized, editable, and machine-readable SVG files.
+4. Prepare SVG assets for integration with operational data.
+5. Connect SVG elements directly to SCADA tags (using original diagram tags and secondary backend identifiers).
+6. Display live equipment states, telemetry measurements, and alarms.
+7. Enable process-oriented Digital Twin visualization capabilities.
 
 ---
 
@@ -46,7 +46,7 @@ Transform plant subsystem diagrams into live process visualizations that serve a
 
 - Structured SVG (`viewBox="0 0 1400 940"`)
 - Machine-readable asset identifiers
-- Data-tag embedded telemetry placeholders (`data-tag="..."`)[cite: 1]
+- Data-tag embedded telemetry placeholders (`data-tag="..."`).
 - Interactive process visualization
 
 ---
@@ -55,17 +55,17 @@ Transform plant subsystem diagrams into live process visualizations that serve a
 
 ## Goal
 
-Convert plant subsystem diagrams into standardized, validated SVG files[cite: 1].
+Convert plant subsystem diagrams into standardized, validated SVG files.
 
 ## Key Activities
 
-- Define core equipment catalog (scope of 6–7 priority assets per module)[cite: 1]
-- Define SVG standards and canvas rules (`docs/standards/svg-conventions.md`)[cite: 1]
-- Define naming and tag attribute conventions[cite: 1]
-- Adapt visual symbology from input source diagrams[cite: 1]
-- Detect equipment and process connections[cite: 1]
-- Generate structured SVGXML[cite: 1]
-- Validate output quality via automated schema scripts (`svg_validator.py`)[cite: 1]
+- Define core equipment catalog (scope of 6–7 priority assets per module)
+- Define SVG standards and canvas rules (`docs/standards/svg-conventions.md`)
+- Define naming and tag attribute conventions
+- Adapt visual symbology from input source diagrams
+- Detect equipment and process connections
+- Generate structured SVGXML
+- Validate output quality via automated schema scripts (`svg_validator.py`)
 
 ## Deliverable
 
@@ -81,10 +81,10 @@ Transform generated SVGs into real-time operational visualizations connected to 
 
 ## Key Activities
 
-- Map SVG data anchors directly to SCADA tags (primary tag & secondary alias)[cite: 1]
+- Map SVG data anchors directly to SCADA tags (primary tag & secondary alias)
 - Connect SVG elements to live SCADA feeds
 - Display live telemetry values and units
-- Display equipment status styling (`.status-running`, `.status-stopped`, `.status-alarm`)[cite: 1]
+- Display equipment status styling (`.status-running`, `.status-stopped`, `.status-alarm`)
 - Add user interactions (hovering, trend popups, ECharts telemetry overlays)
 - Establish operational 2D Digital Twin view
 
@@ -98,22 +98,22 @@ Structured SVG → Live Process Visualization → Operational Digital Twin
 
 ## 1. Existing Plant Standards
 
-- Review real plant diagrams and SCADA displays (e.g., Acciona SWRO RO Racks)[cite: 1]
+- Review real plant diagrams and SCADA displays (e.g., Acciona SWRO RO Racks)
 - Review engineering and drawing conventions
 - Identify diagram types (vector PDFs vs. raster image scans)
 
 ## 2. SCADA Research
 
 - Review existing SCADA screens
-- Identify commonly used equipment symbols and visual states[cite: 1]
-- Understand telemetry display conventions (pressure `bar`, flow `m³/h`, conductivity `µS/cm`)[cite: 1]
-- Understand alarm and status representations[cite: 1]
+- Identify commonly used equipment symbols and visual states
+- Understand telemetry display conventions (pressure `bar`, flow `m³/h`, conductivity `µS/cm`)
+- Understand alarm and status representations
 
 ## 3. Asset & Tag Model Definition
 
 - Equipment classification (6–7 core asset types)
-- Tag mapping strategy (direct attachment to backend tags)[cite: 1]
-- Telemetry attribute structure (`data-tag`, `data-unit`)[cite: 1]
+- Tag mapping strategy (direct attachment to backend tags)
+- Telemetry attribute structure (`data-tag`, `data-unit`)
 
 ## 4. SVG Standards
 
@@ -126,15 +126,15 @@ Structured SVG → Live Process Visualization → Operational Digital Twin
 
 # Key Principle
 
-This project is not intended to replace existing SCADA systems, PLCs, or historians[cite: 1].
+This project is not intended to replace existing SCADA systems, PLCs, or historians.
 
-The goal is to automatically generate the process-oriented visualization layer that currently requires significant manual engineering effort, making plant diagrams easier to connect with operational data and Digital Twin applications[cite: 1].
+The goal is to automatically generate the process-oriented visualization layer that currently requires significant manual engineering effort, making plant diagrams easier to connect with operational data and Digital Twin applications.
 
 ---
 
 # Expected End State
 
-A user provides a subsystem plant diagram, and the system automatically generates an interactive SVG-based process visualization that connects to live SCADA tags and serves as an operational 2D Digital Twin[cite: 1].
+A user provides a subsystem plant diagram, and the system automatically generates an interactive SVG-based process visualization that connects to live SCADA tags and serves as an operational 2D Digital Twin.
 
 ---
 
