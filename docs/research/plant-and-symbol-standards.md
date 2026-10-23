@@ -28,11 +28,6 @@ Based on industrial OT standards and typical water treatment plant documentation
 ## 2. Symbology Baseline & ISA-5.1 Comparison
 
 Industrial water treatment facilities rely heavily on **ISA-5.1 (Instrumentation Symbols and Identification)**, adapted for specific water process units:
-
-### Instrument Balloon Conventions (ISA-5.1)
-* **Plain Circle:** Field-mounted instrument (e.g., local pressure gauge).
-* **Circle Inside a Square:** Shared display / DCS / SCADA instrument (the primary target for Phase 2 dynamic data binding).
-
-The company has not an specific standard. We will set the simbology based on the input's diagram.
+However, the company has not an specific standard. We will set the simbology based on the input's diagram.
 
 ---
